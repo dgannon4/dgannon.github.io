@@ -1,0 +1,161 @@
+<doctype! html>
+    <html lang="en">
+    <head>
+        <title>NGHFB Webpage</title>
+        <meta charset="utf-8">  
+        <style>
+                html {
+                    font-family: Arial, Helvetica, sans-serif; 
+                    color:#333;
+                    }
+                body {
+                    background: #faf9f9;
+                    margin: 0;
+                    } 
+                #container { 
+                    width: 100%; 
+                    margin:0 auto; 
+                    background: #faf9f9;
+                    }
+                #header {
+                    width: 100%; 
+                    height: 50px; 
+                    border-bottom: 1px solid #c7c7c7; 
+                    background: #7ed3b2;
+                    color: white;
+                    text-align: center;
+                    }
+                #banner {
+                    background: #faf9f9; 
+                    height: 250px; 
+                    padding: 20px; 
+                    clear: both;
+                    }
+                #banner_text {
+                    float: inherit;
+                    text-align: left;
+                    width: 1300px;
+                    }
+                #left_col {
+                    float: left;
+                    width: 47%;
+                    margin: 20px;
+                    height: 250px; 
+                    border: 1px solid #333; 
+                    color: black;
+                    background: #add2c9;
+                    text-align: center;
+                    }
+                #right_col {
+                    float: right; 
+                    width: 47%; 
+                    margin: 20px;
+                    height: 250px; 
+                    border: 1px solid #333; 
+                    color: black; 
+                    background: #add2c9; 
+                    text-align: center;
+                    }
+                #footer {
+                    padding: 20px; 
+                    background: #faf9f9;
+                    text-align-last: left;
+                    clear: both;
+                    }
+
+                ul {
+		            padding:0;
+		            margin:0;
+		            display: inline-block;
+		            text-align:left;
+		            }
+            </style>
+    
+    </head>
+
+
+    <body>
+        <!--CONTAINER-->
+        <div id="container">
+            <!--HEADER-->
+            <div id="header">
+               
+                <h1>Noel Gallagher's High Flying Birds</h1>
+            </div>
+            
+            <!--CONTENT AREA-->
+            <div id="content_area">
+                <div id="banner">
+                        <!--Slideshow code from W3 schools-->
+                        <div style="width:400px; float: left">
+                                <img class="mySlides" src="album1.jpg" style="width:50%">
+                                <img class="mySlides" src="album2.jpg" style="width:50%">
+                                <img class="mySlides" src="album3.jpg" style="width:50%">
+                              </div>
+                              
+                              <script>
+                              var myIndex = 0;
+                              carousel();
+                              
+                              function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                  x[i].style.display = "none";  
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}    
+                                x[myIndex-1].style.display = "block";  
+                                setTimeout(carousel, 3000); // Change image every 3 seconds
+                              }
+                              </script>
+
+                            <div id="banner_text">
+                                    <br>
+                                    <br>
+                                    Noel Gallagher's High Flying Birds is an English rock band that formed in 2010 after the breakup of Oasis. Oasis was
+                                    a rock band that gained popularity in the 90's. Oasis's most notable members were brother Noel and Liam Gallagher. A fight 
+                                    between the brothers caused Noel to quit the band and form NGHFB. 
+                                    <br>
+                                    <br>
+                                    NGHFB's most recent album, "Who Built the Moon?", was realeased at the end of 2017. The album ventured more into psychedelic rock
+                                    and pop rock. While the album is not my favorite of Noel Gallagher's, I enjoyed the album and saw NGHFB on his North American
+                                    release tour.
+                                    
+                            </div>
+                </div>
+                <div id="left_col">
+                    <h2>Songs I Enjoy</h2>
+                    <ul>  
+                            <li> <a href="https://open.spotify.com/track/26pNot1SMyFP3SbpPQEEzy" target="_blank"> Alone On The Rope</a> </li>
+                            <li> <a href="https://open.spotify.com/track/2nJQvoy1vkE5ZAwNLYGgKA" target="_blank"> The Good Rebel</a> </li>
+                            <li> <a href="https://open.spotify.com/track/63I1WTV8FKkL9F1V1mrUHN" target="_blank"> If I Had A Gun</a></li>
+                            <li> <a href="https://open.spotify.com/track/1NnmzFWJP0EQM7kJqUyumW" target="_blank"> The Dying of the Light</a> </li>
+                            <li> <a href="https://open.spotify.com/track/3qPE7adi5PLAGLJ4W8KaFE" target="_blank"> Do the Damage</a> </li>
+                            <li> <a href="https://open.spotify.com/track/5jwOPdDOrVecEc6rCwBc9I" target="_blank"> Be Careful What You Wish For</a> </li>   
+                    </ul> 
+                </div>
+                <div id="right_col">
+                    <h2>Band Members</h2>
+                    <ul>
+                        <li> <strong> Noel Gallagher </strong>- Lead Vocals, Lead and Rhythm Guitar</li>
+                        <li> <strong> Mike Rowe </strong>- Keyboards</li>
+                        <li> <strong> Russel Pritchard </strong>- Bass, Backing Vocals</li>
+                        <li> <strong> Chris Sharrock </strong>- Drums</li>
+                        <li> <strong> Gem Archer </strong>- Rhythm and Lead Guitar</li>
+                        <li> <strong> Jessica Greenfield </strong>- Backing Vocals, Keyboards</li>
+                        <li> <strong> Charlotte Marionneau </strong>- Tin Whistle, Scissors, Tambourine, Spoken French, Backing Vocals</li>
+                        <li> <strong> YSEÉ </strong>- Backing Vocals</li>
+                    </ul> 
+
+                </div>
+            </div>
+            <!--FOOTER-->
+            <div id="footer">
+                Visit the band website <a href="https://www.noelgallagher.com/" target="_blank">here.</a>
+                <br>
+            </div>
+        </div>
+        <!--END CONTAINER-->
+    </body>
+</html>
