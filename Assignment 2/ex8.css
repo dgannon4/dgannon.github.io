@@ -13,8 +13,8 @@ h1     {
         text-shadow: 3px 3px 5px #cccccc;
     }
 h2     {
-        background-color: #aeaed4;
-        color: #191970;
+        background-color: rgb(73, 72, 72);;
+        color: white;
         font-family: Georgia, 'Times New Roman', Times, serif
         text-align: center;
     }
