@@ -17,6 +17,7 @@ h2     {
         color: white;
         font-family: Georgia, 'Times New Roman', Times, serif
         text-align: center;
+        text-ident: 3em;
     }
 p      {
         font-size: 1.20em;
