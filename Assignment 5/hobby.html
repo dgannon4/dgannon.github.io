@@ -15,12 +15,19 @@
                 margin: 0;
                 } 
             p {
+                position: relative;
                 text-indent: 20px;
+            }
+            ul {
+                zoom: 1;
+                display: inline-block;
+                *display: inline;
+                font-size: 18px;
             }
             #container { 
                 width: 80%; 
                 margin:0 auto; 
-                background: #fff;
+                background: whitesmoke;
                 border: solid black 1px;
                 }
             #header {
@@ -72,15 +79,15 @@
                 }
             #content {
                 width: 100%
-                height: 200px; 
+                height: auto; 
                 color: black; background: whitesmoke;
                 padding: 20px;
                 border: solid black 0 0 1 0 ;
                 }
             #footer {
-                background-image: url(bg1.jpg);
+                background-color: whitesmoke;
                 background-size: 75%;
-                height: 120px;
+                height: auto;
                 padding: 20px; 
                 clear: both;
                 }
@@ -112,10 +119,25 @@
                 margin-right: auto;
                 width: 25%;
             }
+            div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+            }
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
         </style>
     </head>
-
-
     <body >
         <!--CONTAINER-->
         <div id="container" class="container-fluid">
@@ -133,18 +155,71 @@
                 <div id="content">
                     <h2>What is a Raspberry Pi?</h2>
                     <p> 
-                        The raspberry pi is a 
+                        The raspberry pi is a small single board computer that costs about $35. Raspberry Pi's  initial purpose 
+                        was to help children and others learn to program. Hobbyists have used pi's for all kinds of projects and
+                        there is a community that uses the pi to make a retro-gaming console. There is an image referred to as "RetroPie"
+                        that uses rasbian-os, emulationstation, and retroarch to make an easy to use and extremely customizable emulation 
+                        machine.
+
                     </p>
                     <p>
-                        
-                    </p>
-                    <br>
-                    <h2>Hobbies</h2>
+                        Some of RetroPie's most popular supported systems include:
                         <ul>
-                            <li><h3>PC Gaming</h3></li>
-                            <li><h3>Guitar</h3></li>
-                            <li><h3>Hiking</h3></li>
+                            <li>Atari 2600</li>
+                            <li>Atari 7800</li>
+                            <li>Atari Lynx</li>
+                            <li>GCE Vectrex</li>
+                            <li>NEC TurboGrafx-16</li>
+                            <li>Nintendo 64</li>
+                            <li>Nintendo Entertainment System</li>
+                            <li>Super NES</li>
+                            <li>Nintendo Game Boy></li>
+                            <li>Nintendo Game Boy Color</li>
+                            <li>Nintendo Game Boy Advance</li>
+                        </ul>    
+                        <ul>    
+                            <li>Nintendo Virtual Boy</li>
+                            <li>Sega 32X</li>
+                            <li>Sega CD</li>
+                            <li>Sega Master System</li>
+                            <li>Sega Genesis</li>
+                            <li>Sega Game Gear</li>
+                            <li>Sega Saturn</li>
+                            <li>SNK Neo Geo</li>
+                            <li>SNK Neo Geo Pocket Color</li>
+                            <li>Sony PlayStation</li>
+                            <li>Sony PSP</li>
                         </ul>
+                        <ul>
+                            <div style="overflow:hidden;">
+                                <img src="minipc.jpg" alt="image of raspberry pi" class="resize" style="float: right; border: 1px solid black; height: auto; width: 350px;">
+                            </div>
+                        </ul>
+                        <br>
+                        More info on RetroPie can be found here: <a href="https://retropie.org.uk/">RetroPie.org</a>
+                        </p>
+                    <br>
+                    <h2>My Pi's</h2>
+                    <div class="gallery">
+                            <a target="_blank" href="gameboy.jpg">
+                              <img src="gameboy.jpg" alt="gameboy zero" width="600px" height="400px">
+                            </a>
+                            <div class="desc">Raspberry Pi Compute Module inside of Gameboy Shell</div>
+                          </div>
+                          
+                          <div class="gallery">
+                            <a target="_blank" href="consoleresize.jpg">
+                              <img src="consoleresize.jpg" alt="console" width="600px" height="400px">
+                            </a>
+                            <div class="desc">Raspberry Pi model 3 b+ connected to my TV</div>
+                          </div>
+                          
+                          <div class="gallery">
+                            <a target="_blank" href="tvresize.jpg">
+                              <img src="tvresize.jpg" alt="tv running retropie" width="600px" height="400px">
+                            </a>
+                            <div class="desc">TV running the arcade game Metal Slug</div>
+                          </div>
                 </div>
             </div>
             <div id="footer"></div>
