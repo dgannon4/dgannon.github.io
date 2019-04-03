@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Forms Forms Forms</title>
+            <style>
+                .button1 {
+                background-color: #555555;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                }
+            </style>
+    </head>
+    <body>
+        <h1>New Account Creation</h1>
+        <form action="mailto:dgannon4@gmail.com" onsubmit="return results();" method="post">
+            <H3>Username:</H3>
+            <input type="text" id="name" name="name">
+            <h3>Enter Email</h3>
+            <input type="text" name="email" id="email">
+            <h3>Choose a password</h3>
+            <input type="password" name="pword1" id="pword1">
+            <h3>Confirm password</h3>
+            <input type="password" name="pword2" id="pword2">
+            <h3>Gender</h3>
+            <input type="radio" name="gender" id="gender" value="male">
+            Male
+            <br>
+            <input type="radio" name="gender" id="gender" value="female">
+            Female
+            <br>
+            <input type="radio" name="gender" id="gender" value="none">
+            Prefer not to answer
+            <br>
+            <h3>How old are you</h3>
+            <input type="number" name="myChoice" id="myChoice" min="1" max="40">
+            <h3>Tell us more about yourself</h3>
+            <textarea name="comments" id="comments" cols="50" rows="10" maxlength="1600">
+            </textarea>
+            <br>
+            <br>
+        </form>
+        <button onclick="myFunction()">Submit</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+              var txt;
+              if (confirm("Confirm account creation")) {
+                txt = "Your account has been created.";
+              } else {
+                txt = "An error occured. Your account was not created.";
+              }
+              document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+
+    </body>
+</html>
