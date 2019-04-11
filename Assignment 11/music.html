@@ -1,0 +1,116 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Murlocs-Music Page</title>
+    <link rel="icon" href="murloc.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #8dced6;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: .5;
+  background: whitesmoke;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: white;
+  padding: 10px;
+}
+
+footer {
+  background-color: #8dced6;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 25%;
+      }
+.strokeme {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+    </style>
+</head>
+<body>
+    <header>
+      <div class="strokeme">
+        <h2>The Murlocs</h2>
+      </div>
+    </header>
+    <section>
+      <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="movie.html">Movie Page</a></li>
+            <li><a href="music.html">Music Page</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>The Murlocs Bandcamp Info</h1>
+        <p>Five skinny kids with roots firmly placed in their own blown-out, distorted brand of soulful RnB.
+            Formed in early 2011 by harp player Ambrose Kenny-Smith, The Murlocs have already played alongside Thee Oh Sees, Graveyard Train and Dave Graney. 
+            Their up-tempo snare cracks and noisy doom guitar - accompanied by Ambrose's vocal screech - has been described as a mesmerising demented dance party.
+        <a href="https://themurlocs.bandcamp.com/" target="_blank">Murlocs Bandcamp</a>
+        </p>
+        <h1>Comfort Zone</h1>
+        <p>I recently discoverd the Murlocs and currently Comfort Zone is my favorite song off their new album. Give it a listen below!</p>
+        <img src="albumArt.jpg" alt="Manic Candid Episode album art" class="center">
+        <audio controls class="center">
+            <source src="ComfortZone.ogg" type="audio/ogg">
+            <source src="ComfortZone.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+    </section>
+    <footer>
+      <p>A webpage made by Dakota Gannon</p>
+    </footer>   
+</body>
+</html>
