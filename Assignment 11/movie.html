@@ -1,0 +1,130 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie Review Page</title>
+    <link rel="icon" href="tape.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #b91f1f;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: .5;
+  background: rgb(241, 239, 239);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: white;
+  padding: 10px;
+}
+
+footer {
+  background-color: #b91f1f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+.strokeme {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+    </style>
+</head>
+<body>
+    <header>
+      <div class="strokeme">
+        <h2>Full Metal Alchemist Brotherhood</h2>
+      </div>
+    </header>
+    <section>
+      <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="movie.html">Movie Page</a></li>
+            <li><a href="music.html">Music Page</a></li>
+        </ul>
+      </nav>
+      <article>
+        <img src="fmab.jpg" alt="Full Metal Alchemist Brotherhood" width="250px">
+
+        <video width="600px" controls>
+            <source src="FMAFight.mp4" type="video/mp4">
+            <source src="FMAFight.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Plot</h1>
+        <p>
+            Fullmetal Alchemist: Brotherhood adapts all 27 volumes of the manga, unlike the first television series. 
+            Brothers Edward and Alphonse Elric are raised by their mother Trisha Elric in the remote village of Resembool
+            in the country of Amestris. Their father Hohenheim, a noted and very gifted alchemist, abandoned his family
+            while the boys were still young, and while in Trisha's care they began to show an affinity for alchemy. However,
+            when Trisha died of a lingering illness, they were cared for by their best friend Winry Rockbell and her grandmother
+            Pinako. The boys traveled the world to advance their alchemic training under Izumi Curtis. Upon returning home, the two
+            decide to try to bring their mother back to life with alchemy. However, human transmutation is a taboo, as it is
+            impossible to do so properly. In the failed transmutation that results, Al's body is completely obliterated and
+            Ed loses his left leg. In a last ditch attempt to keep his brother alive, Ed sacrifices his right arm to bring Al's soul
+            back and houses it in a nearby suit of armor. After Edward receives automail prosthetics from Winry and Pinako, the brothers
+            decide to burn their childhood home down (symbolizing their determination and decision of "no turning back") and head to the
+            capital city to become government sanctioned State Alchemists. After passing the exam, Edward is dubbed the "Fullmetal Alchemist" 
+            by the State Military, and the brothers begin their quest to discover the nature of the fabled Philosopher's Stone, under
+            the direction of Colonel Roy Mustang. Along the way, they discover a deep government conspiracy to hide the true nature
+            of the Philosopher's Stone that involves the homunculi, the alchemists of the neighboring nation of Xing, the scarred
+            man from the war-torn nation of Ishval, and their own father's past.
+        </p>
+        <p>
+            via <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist:_Brotherhood" target="_blank">Wikipedia</a>
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>A webpage made by Dakota Gannon</p>
+    </footer>   
+</body>
+</html>
