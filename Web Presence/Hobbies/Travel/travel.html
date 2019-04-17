@@ -1,0 +1,205 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../CSS/sitelayout.css">
+    <script src="main.js"></script>
+    <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+  width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+
+div#columns figure {
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-size: .9rem;
+	color: #444;
+  line-height: 1.5;
+}
+
+div#columns small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Education</a>
+            <div class="dropdown-content">
+                <a href="../../education/assignments.html">Assignments</a>
+                <a href="../../education/education.html">Courses</a>
+            </div>
+        </li>
+        <li class="dropdown">                    
+        <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
+            <div class="dropdown-content">
+                <a href="../tv/anime.html">Anime</a>
+                <a href="../cooking/cook.html">Cooking</a>
+                <a href="../games/games.html">Games</a>
+                <a href="../guitar/guitar.html">Guitar</a>                          
+                <a href="../music/music.html">Music</a>
+                <a href="../projects/projects.html">Projects</a>
+                <a href="../travel/travel.html">Travel</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Personal</a>
+            <div class="dropdown-content">
+                <a href="../../personal/family.html">Family</a>
+                <a href="../../personal/jess.html">Jess</a>
+            </div>
+        </li>
+        <li><a href="../../contact/contact.html">Contact</a></li>   
+    </ul>
+    <header>
+      <h2>Traveling</h2>
+    </header>
+    <div id="columns">
+            <figure>
+            <img src="mt1_co.jpg">
+              <figcaption>Some mountains I took a picture of while hiking in Colorado.</figcaption>
+              </figure>
+              
+              <figure>
+              <img src="mt2_co.jpg">
+              <figcaption>Another picture of mountains while on a hike.</figcaption>
+              </figure>
+              
+            <figure>
+              <img src="mt3_co.jpg">
+              <figcaption>Taken at Rocky Mountain National Park.</figcaption>
+              </figure>
+            
+              <figure>
+              <img src="redrock_co.jpg">
+              <figcaption>Red Rocks Amphitheatre in Colorado.</figcaption>
+              </figure>
+              
+             <figure>
+               <img src="mt4_co.jpg">
+              <figcaption>A picture of the Rocky Mountains on our way to Rocky Mountain National Park.</figcaption>
+              </figure>
+              
+              <figure>
+              <img src="art_tx.jpg">
+              <figcaption>My girlfriend and I visiting an art museum in Texas.</figcaption>
+              </figure>	
+            
+             <figure>
+              <img src="bot_tx.jpg">
+              <figcaption>My girlfriend and I visiting a botanical garden in Texas.</figcaption>
+              </figure>
+            
+            <figure>
+            <img src="ranch_stl.jpg">
+            <figcaption>Fries and a flight of ranch at Twisted Ranch in St. Louis, MO. <a href="https://www.twistedranch.com">Twisted Ranch</a></figcaption>
+            </figure>
+
+              <figure>
+              <img src="bar_stl.png">
+              <figcaption>[Left to right] Becky, Me, and Jess at a bar in St. Loius, MO.</figcaption>
+              </figure>	
+
+            <figure>
+                <img src="drunk_stl.jpg">
+                <figcaption>Jess and I after having a few too many drinks.</figcaption>
+            </figure>	
+              </div>
+   
+    <footer>
+      <p>Footer</p>
+    </footer>   
+</body>
+</html>
