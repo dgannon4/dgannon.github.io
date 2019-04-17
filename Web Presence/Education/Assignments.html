@@ -1,0 +1,160 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/sitelayout.css">
+    <script src="main.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html,body { height:100%; }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: minmax(600px, auto);
+        }
+        .center {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        .btn {
+          background-color:  DodgerBlue;
+          border: none;
+          color: white;
+          padding: 10px 25px;
+          cursor: pointer;
+          font-size: 20px;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+          background-color: RoyalBlue;
+        }
+</style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Education</a>
+          <div class="dropdown-content">
+              <a href="assignments.html">Assignments</a>
+              <a href="education.html">Courses</a>
+          </div>
+        </li>
+        <li class="dropdown">                    
+        <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
+            <div class="dropdown-content">
+                <a href="../hobbies/tv/anime.html">Anime</a>
+                <a href="../hobbies/cooking/cook.html">Cooking</a>
+                <a href="../hobbies/games/games.html">Games</a>
+                <a href="../hobbies/guitar/guitar.html">Guitar</a>                          
+                <a href="../hobbies/music/music.html">Music</a>
+                <a href="../hobbies/projects/projects.html">Projects</a>
+                <a href="../hobbies/travel/travel.html">Travel</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Personal</a>
+            <div class="dropdown-content">
+                <a href="../personal/family.html">Family</a>
+                <a href="../personal/jess.html">Jess</a>
+            </div>
+        </li>
+        <li><a href="../contact/contact.html">Contact</a></li>   
+    </ul>
+        <header>
+            <h2>Assignment Showcase</h2>
+        </header> 
+        <br>
+        <div class="wrapper">
+          
+          <div class="center"> 
+              <h3>MGMT 346: Group Report</h3>
+              <embed src="mgmt346report.pdf" width="500" height="375" type="application/pdf">
+              <br>
+              <br>
+                <a href="mgmt346report.pdf" download>
+                  <button class="btn"> 
+                      Download
+                  </button>
+                </a>    
+          </div>
+
+          <div class="center"> 
+            <h3>OMIS 324: Assignment 2</h3>
+            <embed src="324asgmt2.pdf" width="500" height="375" type="application/pdf">
+            <br>
+            <br>
+              <a href="324asgmt2.pdf" download>
+                <button class="btn"> 
+                    Download
+                </button>
+              </a>
+          </div>
+
+          <div class="center">
+            <h3>OMIS 324: Group Report</h3>
+            <embed src="omis324group.pdf" width="500" height="375" type="application/pdf">
+            <br>
+            <br>
+              <a href="omis324group.pdf" download>
+                <button class="btn"> 
+                    Download
+                </button>
+              </a>
+          </div>
+          
+          <div class="center">
+            <h3>OMIS 442: Puppet Game Charts</h3>
+            <embed src="omis442puppet.pdf" width="500" height="375" type="application/pdf">
+              <br>
+            <br>
+              <a href="omis442puppet.pdf" download>
+                <button class="btn"> 
+                    Download
+                </button>
+              </a>
+          </div>
+
+            <div class="center">
+              <h3>OMIS 460: Group Report</h3>
+              <embed src="460groupreport.pdf" width="500" height="375" type="application/pdf">
+              <br>
+              <br>
+                <a href="460groupreport.pdf" download>
+                  <button class="btn"> 
+                      Download
+                  </button>
+                </a>
+            </div>
+
+            <div class="center">
+              <h3>UBUS 311: International Feasibility Study</h3>
+              <embed src="ubus311study.pdf" width="500" height="375" type="application/pdf">
+              <br>
+              <br>
+                <a href="ubus311study.pdf" download>
+                  <button class="btn"> 
+                      Download
+                  </button>
+                </a>
+            </div>
+
+        </div>
+    <footer>
+        <p>Footer</p>
+    </footer>   
+</body>
+</html>
