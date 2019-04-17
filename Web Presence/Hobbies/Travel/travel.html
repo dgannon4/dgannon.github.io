@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Travels</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" media="screen" href="../../CSS/sitelayout.css">
+=======
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+>>>>>>> d14ff32f8ad8320d77ec4611f6183d86847263ed
     <script src="main.js"></script>
     <style>
 * {
@@ -16,9 +20,15 @@ body {
 }
 header {
   background-color: #666;
+<<<<<<< HEAD
   padding: 10px;
   text-align: center;
   font-size: 25px;
+=======
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+>>>>>>> d14ff32f8ad8320d77ec4611f6183d86847263ed
   color: white;
 }
 section {
@@ -26,6 +36,7 @@ section {
   display: flex;
 }
 
+<<<<<<< HEAD
 /* Style the footer */
 footer {
   background-color: #777;
@@ -109,10 +120,51 @@ li a {
 
 li a:hover {
   background-color: #111;
+=======
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+>>>>>>> d14ff32f8ad8320d77ec4611f6183d86847263ed
 }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <ul>
         <li><a href="../../index.html">Home</a></li>
         <li class="dropdown">
@@ -198,6 +250,34 @@ li a:hover {
             </figure>	
               </div>
    
+=======
+    <header>
+      <h2>Traveling</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="games/games.html">Games</a></li>
+          <li><a href="guitar/guitar.html">Guitar</a></li>
+          <li><a href="projects/projects.html">Projects</a></li>
+          <li><a href="travel/travel.html">Travel</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Colorado</h1>
+        <p>My girlfriend and I visited Colorado.</p>
+        <p>We hiked wow.</p>
+        <h1>Texas</h1>
+        <p>Text about texas</p>
+        <p>We went to museums and stuff.</p>
+        <h1>Missouri</h1>
+        <p>We visited a friend in st louis</p>
+      </article>
+    </section>
+>>>>>>> d14ff32f8ad8320d77ec4611f6183d86847263ed
     <footer>
       <p>Footer</p>
     </footer>   
