@@ -3,12 +3,131 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/sitelayout.css">
     <script src="main.js"></script>
+    <style>
+        #courses {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        margin-left:auto; 
+        margin-right:auto;
+        }
+
+        #courses td, #courses th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+        #courses tr:nth-child(even){background-color: #f2f2f2;}
+
+        #courses tr:hover {background-color: #ddd;}
+
+        #courses th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #fcfcc4;
+        color: rgb(0, 0, 0);
+        }
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Education</a>
+          <div class="dropdown-content">
+              <a href="assignments.html">Assignments</a>
+              <a href="education.html">Courses</a>
+          </div>
+        </li>
+        <li class="dropdown">                    
+        <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
+            <div class="dropdown-content">
+                <a href="../hobbies/tv/anime.html">Anime</a>
+                <a href="../hobbies/cooking/cook.html">Cooking</a>
+                <a href="../hobbies/games/games.html">Games</a>
+                <a href="../hobbies/guitar/guitar.html">Guitar</a>                          
+                <a href="../hobbies/music/music.html">Music</a>
+                <a href="../hobbies/projects/projects.html">Projects</a>
+                <a href="../hobbies/travel/travel.html">Travel</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Personal</a>
+            <div class="dropdown-content">
+                <a href="../personal/family.html">Family</a>
+                <a href="../personal/jess.html">Jess</a>
+            </div>
+        </li>
+        <li><a href="../contact/contact.html">Contact</a></li>   
+    </ul>
+        <header>
+            <h2>Courses</h2>
+        </header> 
+        <br>   
+<table id="courses">
+    <caption>Fall 2018</caption>
+        <tr>
+          <th>Course</th>
+          <th>Description</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td>OMIS 324 </td>
+          <td>Intro To Business Analytic Tools</td>
+          <td>B+</td>
+        </tr>
+        <tr>
+          <td>OMIS 462</td>
+          <td>Business Systems Analysis, Design & Development</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>OMIS 473</td>
+          <td>Data Visualization for Business</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>OMIS 478</td>
+          <td>Supply Chain Systems</td>
+          <td>B+</td>
+        </tr>
+    </table>
+    <br>
+    <table id="courses">
+        <caption>Spring 2019 (In Progress)</caption>
+        <tr>
+            <th>Course</th>
+            <th>Description</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+          <td>MGMT 468</td>
+          <td>Strategic Management</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>OMIS 474</td>
+          <td>Digital Analytics</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>OMIS 475</td>
+          <td>Internet and Web Computing Technology</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>OMIS 482</td>
+          <td>Predictive Business Analytics</td>
+          <td>N/A</td>
+        </tr>
+      </table>
+        <footer>
+            <p>Footer</p>
+        </footer>   
 </body>
 </html>
